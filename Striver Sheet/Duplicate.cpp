@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-
-public
+ 
+ 
 class Solution
 {
-public
+public:
     int findDuplicate(int[] nums)
     {
         if (nums == null || nums.length <= 1)
