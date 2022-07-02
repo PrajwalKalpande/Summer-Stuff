@@ -19,7 +19,7 @@ public:
         int ones = count(strs[i].begin(), strs[i].end(), '1');
         int zeros = strs[i].length() - ones;
         
-        if(zeros <= m && ones <= n) { 
+        if(zeros <= m && ones <= n) {
             return memo[i][m][n] = max(1 + OnesZerosMemo(strs, i + 1, m - zeros, n - ones), OnesZerosMemo(strs, i + 1, m, n));
         }
         

@@ -9,7 +9,6 @@ class Solution {
 public:
     
     int solve(vector<int> a,int i,int prev,vector<vector<int>>& dp){
-        
         if(i==a.size())return 0;
         
         if(dp[i][prev+1]!=-1)return dp[i][prev+1];
